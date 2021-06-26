@@ -3,7 +3,8 @@ import { Row, Col } from "react-flexbox-grid";
 // SCSS
 import "./hero.scss";
 //Assets
-import HeroImage from "../../assets/hero/photo-1560250097-0b93528c311a.jpeg";
+import HeroImage from "../../assets/hero/Dihan propic .jpg";
+// import HeroImage from "../../assets/hero/333edited.jpg";
 //Components
 import Button from "../ui-components/button/button";
 
@@ -16,10 +17,11 @@ const hero = () => (
             <h1 className="weight800 font60">Hello!!!</h1>
             <h1 className="weight800 font60">This Is Nahid Murad Abir</h1>
             <p className="font12">
-              A junior web developer who enthusiast the development of a
-              website. I have a 1-year working experience by doing several web
-              project. Always tried to find real-life problems and try to find
-              an efficient solution using my critical thinking ability.
+              A passionate web developer who enthusiast the development of a
+              website. I have a <b>1.6-year's of working experience</b> by doing
+              several web project. Always tried to find real-life problems and
+              try to find an efficient solution using my critical thinking
+              ability.
             </p>
             <Button label="SEND MESSAGE" target={"contact"} />
           </div>

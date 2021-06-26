@@ -5,12 +5,18 @@ import Masonry from "react-masonry-css";
 import "./portfolio.scss";
 //Assets
 import Arrow from "../../assets/portfolio/arrow.svg";
-import Preview1 from "../../assets/portfolio/project01/preview.png";
-import Preview2 from "../../assets/portfolio/project02/preview.png";
-import Preview3 from "../../assets/portfolio/project03/preview.png";
-import Preview4 from "../../assets/portfolio/project04/preview.png";
-import Preview5 from "../../assets/portfolio/project05/preview.png";
-import Preview6 from "../../assets/portfolio/project06/preview.png";
+import html1 from "../../assets/portfolio/html/Christy.png";
+import html2 from "../../assets/portfolio/html/consultency.PNG";
+import html3 from "../../assets/portfolio/html/Elavuation.PNG";
+import html4 from "../../assets/portfolio/html/newsite.PNG";
+import html5 from "../../assets/portfolio/html/Screenshot_1.png";
+import html6 from "../../assets/portfolio/html/socialblog.PNG";
+import html7 from "../../assets/portfolio/html/urban.PNG";
+import html8 from "../../assets/portfolio/html/Stocki.PNG";
+
+// react
+import react1 from "../../assets/portfolio/react/consulting.PNG";
+
 //Components
 import Button from "../ui-components/button/button";
 import Title from "../ui-components/title/title";
@@ -24,14 +30,82 @@ class Portfolio extends React.Component {
       layout: "list",
       // PORTFOLIO PROJECTS
       projects: [
+        // html css
         {
           id: "1",
-          preview:
-            "https://images.unsplash.com/photo-1618728651241-e28e3e05bc92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-          title: "E-commerce Site",
-          tag: "MERN",
-          link: "https://dihan-abir0.netlify.app/",
+          preview: html1,
+          title: "E-commerce Frontend",
+          tag: "HTML",
+          link: "https://vigorous-allen-9f12ab.netlify.app/",
+          github: "https://github.com/DihanAbir",
         },
+        {
+          id: "2",
+          preview: html2,
+          title: "Counsel",
+          tag: "HTML",
+          link: "https://lucid-gates-e76ace.netlify.app/",
+          github: "https://github.com/DihanAbir",
+        },
+        {
+          id: "3",
+          preview: html3,
+          title: "Elevation",
+          tag: "HTML",
+          link: "https://happy-swirles-6a57f2.netlify.app/",
+          github: "https://github.com/DihanAbir",
+        },
+        {
+          id: "21554",
+          preview: html4,
+          title: "News Portal",
+          tag: "HTML",
+          link: "https://dreamy-engelbart-86a487.netlify.app/",
+          github: "https://github.com/DihanAbir",
+        },
+        {
+          id: "3",
+          preview: html5,
+          title: "NEC LAB",
+          tag: "HTML",
+          link: "https://admiring-ramanujan-64a0ce.netlify.app/",
+          github: "https://github.com/DihanAbir",
+        },
+        {
+          id: "4",
+          preview: html6,
+          title: "Social Blog",
+          tag: "HTML",
+          link: "https://unruffled-keller-12f62f.netlify.app/",
+          github: "https://github.com/DihanAbir",
+        },
+        {
+          id: "5",
+          preview: html7,
+          title: "Urban Fashion",
+          tag: "HTML",
+          link: "https://nifty-liskov-45be7a.netlify.app/",
+          github: "https://github.com/DihanAbir",
+        },
+        {
+          id: "6",
+          preview: html8,
+          title: "Stocki",
+          tag: "HTML",
+          link: "https://modest-swartz-52f21a.netlify.app/",
+          github: "https://github.com/DihanAbir",
+        },
+        // html css
+        // react
+        {
+          id: "1",
+          preview: react1,
+          title: "Counsulting Site",
+          tag: "MERN",
+          link: "https://pensive-varahamihira-61d0eb.netlify.app/",
+          github: "https://dihan-abir0.netlify.app/portfolio",
+        },
+
         {
           id: "2",
           preview:
@@ -159,22 +233,26 @@ class Portfolio extends React.Component {
     // PORTFOLIO GALLERY RENDER
     let projectsRender = null;
     if (this.state.filterResult) {
-      projectsRender = this.state.filterResult.map((project) => (
-        // <ProjectBoxList
-        //   preview={project.preview}
-        //   key={project.id}
-        //   value={project.id}
-        //   title={project.title}
-        //   tag={project.tag}
-        //   link={project.link}
-        // />
-        <ProjectBox
-          preview={project.preview}
-          key={project.id}
-          title={project.title}
-          tag={project.tag}
-        />
-      ));
+      projectsRender = this.state.filterResult.map((project) =>
+        this.state.layout === "list" ? (
+          <ProjectBoxList
+            preview={project.preview}
+            key={project.id}
+            value={project.id}
+            title={project.title}
+            tag={project.tag}
+            link={project.link}
+          />
+        ) : (
+          <ProjectBox
+            preview={project.preview}
+            key={project.id}
+            title={project.title}
+            tag={project.tag}
+            link={project.link}
+          />
+        )
+      );
     }
     // PORTFOLIO GALLERY BREAKPOINTS
     const portfolioBreakpoints = {
@@ -252,6 +330,16 @@ class Portfolio extends React.Component {
                   >
                     Application
                   </li>
+                  <li
+                    className={
+                      this.state.pickedFilter === "HTML"
+                        ? "portfolio__nav-active font12"
+                        : "font12"
+                    }
+                    onClick={() => this.filterGallery("HTML")}
+                  >
+                    HTML
+                  </li>
                 </ul>
               </div>
             </Col>
@@ -267,8 +355,18 @@ class Portfolio extends React.Component {
               lg={3}
             >
               <div className="layoutButtn">
-                <button onClick={this.listHandler.bind(this)}>List</button>
-                <button onClick={this.gridHandler.bind(this)}>Grid</button>
+                <button
+                  className="btn-custom"
+                  onClick={this.listHandler.bind(this)}
+                >
+                  List
+                </button>
+                <button
+                  className="btn-custom"
+                  onClick={this.gridHandler.bind(this)}
+                >
+                  Grid
+                </button>
               </div>
               <div
                 className="portfolio__filter border"
@@ -283,14 +381,24 @@ class Portfolio extends React.Component {
               </div>
             </Col>
           </Row>
+          {this.state.layout === "list" ? (
+            <Masonry
+              breakpointCols={portfolioBreakpoints}
+              className="row "
+              columnClassName="mint__gallery2"
+            >
+              {projectsRender}
+            </Masonry>
+          ) : (
+            <Masonry
+              breakpointCols={portfolioBreakpoints}
+              className="row "
+              columnClassName="mint__gallery"
+            >
+              {projectsRender}
+            </Masonry>
+          )}
 
-          <Masonry
-            breakpointCols={portfolioBreakpoints}
-            className="row "
-            columnClassName="mint__gallery"
-          >
-            {projectsRender}
-          </Masonry>
           <Row className="flex-center padding40">
             <Button label="HAVE WORK FOR US?" target={"contact"} />
           </Row>

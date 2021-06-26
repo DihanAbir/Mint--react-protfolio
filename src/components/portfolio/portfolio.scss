@@ -61,13 +61,25 @@
     }
   }
 }
-
+.btn-custom {
+  margin: 0px 5px;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 2px;
+  background-color: $main-color;
+  color: #fff;
+}
 .my-masonry-grid {
   display: -webkit-box; /* Not needed if autoprefixing */
   display: -ms-flexbox; /* Not needed if autoprefixing */
   // display: flex;
   margin-left: -30px; /* gutter size offset */
   // width: auto;
+}
+.mint__gallery2 {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+  width: 100% !important;
 }
 .mint__gallery {
   padding-left: 30px; /* gutter size */

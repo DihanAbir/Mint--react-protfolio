@@ -1,4 +1,4 @@
-@import './colors.scss';
+@import "./colors.scss";
 
 /* Box sizing rules */
 *,
@@ -11,6 +11,26 @@
 ul[class],
 ol[class] {
   padding: 0;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track background color*/
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(140, 142, 241, 0.644);
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(120, 122, 231, 0.952);
 }
 
 /* Remove default margin */
@@ -81,23 +101,16 @@ li {
     scroll-behavior: auto !important;
   }
 }
-html { 
-  font-size: 62.5%; 
+html {
+  font-size: 62.5%;
 }
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: $black-color;
   font-size: 1.5rem;
   overflow-x: hidden;
 
-
-
-
-
-
   height: 500vh;
-
-
 }
 .wrapper {
   max-width: 1200px;
@@ -137,8 +150,8 @@ ul li {
 }
 a {
   text-decoration: none;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .text-center {
   text-align: center;
@@ -159,9 +172,9 @@ a {
   cursor: pointer;
 }
 .shadow {
-  -webkit-box-shadow: 0px 2px 6px 2px rgba(92,112,133,0.1);
-  -moz-box-shadow: 0px 2px 6px 2px rgba(92,112,133,0.1);
-  box-shadow: 0px 2px 6px 2px rgba(92,112,133,0.1);
+  -webkit-box-shadow: 0px 2px 6px 2px rgba(92, 112, 133, 0.1);
+  -moz-box-shadow: 0px 2px 6px 2px rgba(92, 112, 133, 0.1);
+  box-shadow: 0px 2px 6px 2px rgba(92, 112, 133, 0.1);
 }
 /*********************** SPACINGS ***********************/
 .padding5 {
@@ -186,7 +199,12 @@ a {
   padding: 6rem 0;
 }
 /*********************** FONTS ***********************/
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 500;
 }
 .weight500 {
@@ -199,7 +217,7 @@ h1,h2,h3,h4,h5,h6 {
   font-size: 0.9rem;
 }
 .font10 {
-  font-size: 1.0rem;
+  font-size: 1rem;
 }
 .font11 {
   font-size: 1.1rem;
@@ -236,7 +254,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .font60 {
   font-size: 6rem;
-  line-height:8rem;
+  line-height: 8rem;
 }
 
 p {
@@ -248,4 +266,3 @@ p {
 .active-link {
   color: $main-color;
 }
-

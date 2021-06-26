@@ -1,12 +1,12 @@
 import React from "react";
-import Swiper from './swiper';
+import Swiper from "./swiper";
 //SCSS
 import "./partners.scss";
 
 const partners = () => (
   <div id="partners">
     <div className="wrapper">
-      <Swiper/>
+      <Swiper />
     </div>
   </div>
 );

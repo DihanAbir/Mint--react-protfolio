@@ -1,8 +1,12 @@
-@import '../../style/App.scss';
+@import "../../style/App.scss";
 
 .blog {
   background-color: $light-color;
   padding: 60px 0;
+}
+
+.react-multiple-carousel__arrow {
+  background: rgba(89, 117, 239, 0.8) !important;
 }
 
 @media screen and (max-width: 990px) {
