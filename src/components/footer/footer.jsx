@@ -13,7 +13,7 @@ const partnerBox = () => (
         <Col xs={12} sm={6} md={6}>
           <div className="footer-box">
             <img src={Logo} alt="logo" />
-            <p>© 2020 - abir, All Right Reserved</p>
+            <p>© 2021 - abir, All Right Reserved</p>
           </div>
         </Col>
         <Col xs={12} sm={6} md={6}>
