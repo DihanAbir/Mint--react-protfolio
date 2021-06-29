@@ -5,6 +5,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  // z-index: -1111111;
 }
 
 /* Remove default padding */
@@ -265,4 +266,70 @@ p {
 // Hover color for navbar
 .active-link {
   color: $main-color;
+}
+.btn-custom2 {
+  background-color: salmon;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+}
+.cvbtn,
+.cvbtn a {
+  background-color: white;
+  color: salmon;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 17px;
+  animation: mymove 5s infinite;
+}
+.wrapper {
+  animation: mymove 5s infinite;
+}
+.cvbtn a {
+  animation: cv 3s infinite;
+  position: relative;
+}
+
+@keyframes mymove {
+  0% {
+    color: #001763;
+  }
+  25% {
+    color: #000c2c;
+  }
+  75% {
+    color: #000002;
+  }
+  100% {
+    color: #000049;
+  }
+}
+@keyframes cv {
+  0% {
+    top: 0px;
+    -webkit-box-shadow: 5px 5px 18px -15px rgba(70, 126, 248, 0.25);
+    box-shadow: 5px 5px 18px -15px rgba(70, 126, 248, 0.25);
+  }
+
+  25% {
+    top: 2px;
+    -webkit-box-shadow: 5px 5px 18px -5px rgba(70, 126, 248, 0.25);
+    box-shadow: 5px 5px 18px -5px rgba(70, 126, 248, 0.25);
+  }
+  50% {
+    top: 4px;
+    -webkit-box-shadow: 5px 5px 18px 3px rgba(70, 126, 248, 0.25);
+    box-shadow: 5px 5px 18px 3px rgba(70, 126, 248, 0.25);
+  }
+  75% {
+    top: 2px;
+    -webkit-box-shadow: 5px 5px 18px -5px rgba(70, 126, 248, 0.25);
+    box-shadow: 5px 5px 18px -5px rgba(70, 126, 248, 0.25);
+  }
+  100% {
+    top: 0px;
+    -webkit-box-shadow: 5px 5px 18px -15px rgba(70, 126, 248, 0.25);
+    box-shadow: 5px 5px 18px -15px rgba(70, 126, 248, 0.25);
+  }
 }

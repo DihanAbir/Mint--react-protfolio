@@ -6,12 +6,11 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 // Assets
-import Preview01 from "../../assets/blog/story01/preview.png";
-import Preview02 from "../../assets/blog/story02/preview.png";
-import Preview03 from "../../assets/blog/story03/preview.png";
-import Preview04 from "../../assets/blog/story04/preview.png";
-import Preview05 from "../../assets/blog/story05/preview.png";
-import Preview06 from "../../assets/blog/story06/preview.png";
+import Preview01 from "../../assets/blog/contextapi.jpeg";
+import Preview02 from "../../assets/blog/react.png";
+import Preview03 from "../../assets/blog/authintication.png";
+import Preview04 from "../../assets/blog/JavaScript.jpg";
+
 // Components
 import Title from "../ui-components/title/title";
 import BlogBox from "./blogBox";
@@ -43,50 +42,35 @@ class Blog extends React.Component {
       {
         image: Preview01,
         id: "1",
-        title: "SUPER BLOG ARTICLE!",
+        title: "Authintication",
         description:
-          "Lorem ipsum dolor sit amet, consectetur undo thes tabore et dolore magna aliqua.",
+          " Authentication is the process of recognizing a user’s identity...",
         date: "21 April 2020",
+        link: "https://nahid-muradabir.medium.com/how-to-use-firebase-to-authenticate-the-user-using-g-mail-in-react-js-a688695a35cd",
       },
       {
         image: Preview02,
         id: "2",
-        title: "AWESOME ARTICLE!",
-        description:
-          "Lorem ipsum dolor undo thes tabore et dolore magna aliqua.",
+        title: "Introduction With React",
+        description: "Introduction With React",
         date: "27 April 2020",
+        link: "https://nahid-muradabir.medium.com/how-to-use-firebase-to-authenticate-the-user-using-g-mail-in-react-js-a688695a35cd",
       },
       {
         image: Preview03,
         id: "3",
-        title: "SUPER TITLE!",
-        description:
-          "Lorem tabore et dolore magna aliqua ipsum dolor undo thes.",
+        title: "How to integrate Authentication with firebase",
+        description: "How to integrate Authentication with firebase",
         date: "03 May 2020",
+        link: "https://nahid-muradabir.medium.com/how-to-use-firebase-to-authenticate-the-user-using-g-mail-in-react-js-a688695a35cd",
       },
       {
         image: Preview04,
         id: "4",
-        title: "BLOG TITLE!",
-        description:
-          "Lorem tabore et dolore magna aliqua ipsum dolor undo thes.",
+        title: "Introduction With JavaScript",
+        description: "",
         date: "15 May 2020",
-      },
-      {
-        image: Preview05,
-        id: "5",
-        title: "BLOG ARTICLE!",
-        description:
-          "Lorem tabore et dolore magna aliqua ipsum dolor undo thes.",
-        date: "20 May 2020",
-      },
-      {
-        image: Preview06,
-        id: "6",
-        title: "AWESOME TITLE!",
-        description:
-          "Lorem tabore et dolore magna aliqua ipsum dolor undo thes.",
-        date: "23 May 2020",
+        link: "https://nahid-muradabir.medium.com/start-a-new-journey-with-javascript-7a4e28761d46",
       },
     ],
   };
@@ -96,9 +80,11 @@ class Blog extends React.Component {
     let storiesRender = null;
     if (this.state.stories) {
       storiesRender = this.state.stories.map((story) => (
-        <div key={story.id}>
-          <BlogBox article={story} />
-        </div>
+        <a style={{ color: "black" }} target="_blank" href={`${story.link}`}>
+          <div key={story.id}>
+            <BlogBox article={story} />
+          </div>
+        </a>
       ));
     }
     // OPTIONS FOR BLOG SLIDER
@@ -135,10 +121,7 @@ class Blog extends React.Component {
       <div className="blog">
         <div className="wrapper">
           <Title title="OUR BLOG." />
-          <p className="font12">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt<br></br>ut labore et dolore magna aliqua.
-          </p>
+
           <div className="padding30">
             <Carousel responsive={responsive}>{storiesRender}</Carousel>
           </div>

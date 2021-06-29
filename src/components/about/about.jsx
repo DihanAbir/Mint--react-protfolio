@@ -12,11 +12,8 @@ import Person02 from "../../assets/about/web.png";
 const about = () => (
   <div id="about">
     <div className="wrapper">
-      <Title title="ABOUT US." />
-      <p className="font12">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt<br></br>ut labore et dolore magna aliqua.
-      </p>
+      <Title title="ABOUT" />
+
       <Row>
         <Col md={12} lg={4}>
           <TeamBox avatar={Person01} name="" job="Web Developer" />

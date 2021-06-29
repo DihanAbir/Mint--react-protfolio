@@ -15,7 +15,8 @@ const projectBox = (props) => (
           // rel="noopener noreferrer"
           target="_blank"
         >
-          <button>Live</button>
+          <button className="btn-custom">Live</button>
+          <button className="btn-custom2 mx-1">github</button>
         </a>
       </div>
     </div>

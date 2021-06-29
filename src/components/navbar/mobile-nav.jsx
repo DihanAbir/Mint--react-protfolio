@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { BsCloudDownload } from "react-icons/bs";
+
+import mypdf from "../../assets/Full_Stack_Nahid_Murad_Abir.pdf";
 // SCSS
 import "./navbar.scss";
 // Assets
-import CloseIcons from '../../assets/navbar/mobile-close.svg';
+import CloseIcons from "../../assets/navbar/mobile-close.svg";
 import Logo from "../../assets/navbar/logo-yellow.svg";
 
 const mobileNav = (props) => (
@@ -20,7 +23,7 @@ const mobileNav = (props) => (
         duration={500}
         onClick={props.closeMobileMenu}
       >
-        <img src={Logo} alt="logo" />
+        <img style={{ color: "white" }} src={Logo} alt="logo" />
       </Link>
     </div>
     <div className="mobile__navbar-menu">
@@ -76,6 +79,13 @@ const mobileNav = (props) => (
           >
             CONTACT
           </Link>
+        </li>
+        <li>
+          <button className="cvbtn btn cv">
+            <a href={mypdf} download="MD Nahid Murad Abir cv.pdf">
+              CV <BsCloudDownload />
+            </a>
+          </button>
         </li>
       </ul>
     </div>

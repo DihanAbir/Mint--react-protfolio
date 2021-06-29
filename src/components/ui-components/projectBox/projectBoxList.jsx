@@ -20,27 +20,46 @@ function projectBoxList(props) {
           <div className="col-md-6 projectdetails">
             <h4 className="font30 weight800">{props.title}</h4>
             <h4 className="font12 weight500">{props.tag}</h4>
-            <a
-              href={props.link}
-              // rel="noopener noreferrer"
-              target="_blank"
-            >
-              <button className="btn-custom">Live</button>
-            </a>
+            <p className="d-flex">
+              <a
+                href={props.link}
+                // rel="noopener noreferrer"
+                target="_blank"
+              >
+                <button className="btn-custom">Live</button>
+              </a>
+              <a
+                href={props.github}
+                // rel="noopener noreferrer"
+                target="_blank"
+              >
+                <button className="btn-custom2">github</button>
+              </a>
+            </p>
           </div>
+          <hr />
         </div>
       ) : (
         <div className="row">
           <div className="col-md-6 projectdetails">
             <h4 className="font30 weight800">{props.title}</h4>
             <h4 className="font12 weight500">{props.tag}</h4>
-            <a
-              href={props.link}
-              // rel="noopener noreferrer"
-              target="_blank"
-            >
-              <button className="btn-custom">Live</button>
-            </a>
+            <p className="d-flex">
+              <a
+                href={props.github}
+                // rel="noopener noreferrer"
+                target="_blank"
+              >
+                <button className="btn-custom2">github</button>
+              </a>
+              <a
+                href={props.link}
+                // rel="noopener noreferrer"
+                target="_blank"
+              >
+                <button className="btn-custom">Live</button>
+              </a>
+            </p>
           </div>
           <div className="col-md-6 mt-5">
             <img
@@ -51,6 +70,7 @@ function projectBoxList(props) {
           </div>
         </div>
       )}
+      <hr style={{ margin: "20px", border: "1px dotted #d8d8d8" }} />
     </div>
   );
 }

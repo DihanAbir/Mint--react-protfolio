@@ -12,6 +12,31 @@
       padding-bottom: 50px;
     }
   }
+  .contactinfo {
+    display: flex;
+    align-items: center;
+  }
+  .contbtn {
+    margin: 0px 10px !important;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: white;
+  }
+  .contbtnu {
+    background-color: #14a800;
+    border: 2px solid #14a800;
+  }
+  .contbtnf {
+    background-color: #1dbf73;
+    border: 2px solid #1dbf73;
+  }
+  .paraabout {
+    font-size: 14px;
+    font-family: inherit;
+    color: rgb(0, 10, 36);
+  }
 
   .hero-image {
     max-width: 570px;

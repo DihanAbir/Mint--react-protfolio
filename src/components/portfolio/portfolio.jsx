@@ -16,6 +16,28 @@ import html8 from "../../assets/portfolio/html/Stocki.PNG";
 
 // react
 import react1 from "../../assets/portfolio/react/consulting.PNG";
+import react2 from "../../assets/portfolio/react/aircncPNG.PNG";
+import react3 from "../../assets/portfolio/react/coursesite.PNG";
+import react4 from "../../assets/portfolio/react/emajnPNG.PNG";
+import react5 from "../../assets/portfolio/react/resturant mernPNG.PNG";
+import react6 from "../../assets/portfolio/react/athena.PNG";
+
+// portfolio.
+import portfolio1 from "../../assets/portfolio/portfolio/2nd.PNG";
+import portfolio2 from "../../assets/portfolio/portfolio/3rd.png";
+import portfolio3 from "../../assets/portfolio/portfolio/reactp.png";
+
+// e-commerce
+// import ecom1 from "../../assets/portfolio/e-commerce/";
+// import ecom2 from "../../assets/portfolio/e-commerce/";
+
+// nextjs
+import next1 from "../../assets/portfolio/nextjs/concert.PNG";
+
+// Nodejs
+import node1 from "../../assets/portfolio/node/bootcamp.PNG";
+import node2 from "../../assets/portfolio/node/noteapp.PNG";
+import node3 from "../../assets/portfolio/node/taskmanager.PNG";
 
 //Components
 import Button from "../ui-components/button/button";
@@ -30,9 +52,70 @@ class Portfolio extends React.Component {
       layout: "list",
       // PORTFOLIO PROJECTS
       projects: [
+        // portfolio
+        {
+          id: "71",
+          preview: portfolio2,
+          title: "portfolio1",
+          tag: "portfolio",
+          link: "",
+          github: "https://github.com/DihanAbir/Mint--react-protfolio",
+        },
+        {
+          id: "72",
+          preview: portfolio3,
+          title: "portfolio3",
+          tag: "portfolio",
+          link: "https://gallant-jepsen-11dcf0.netlify.app/",
+          github: "https://github.com/saikat1095/React_Portfolio",
+        },
+        {
+          id: "73",
+          preview: portfolio1,
+          title: "portfolio2",
+          tag: "portfolio",
+          link: "https://dihan-abir0.netlify.app/",
+          github: "https://github.com/DihanAbir",
+        },
+
+        // next
+        {
+          id: "31",
+          preview: next1,
+          title: "Concert Evenet",
+          tag: "NextJS",
+          link: "",
+          github: "https://github.com/DihanAbir/Music-Event_NextJS",
+        },
+
+        // node
+        {
+          id: "41",
+          preview: node2,
+          title: "Note app",
+          tag: "Node",
+          link: "",
+          github: "https://github.com/DihanAbir/notepad",
+        },
+        {
+          id: "42",
+          preview: node1,
+          title: "Bootcamp",
+          tag: "Node",
+          link: "",
+          github: "https://github.com/DihanAbir/Bootcamp",
+        },
+        {
+          id: "43",
+          preview: node3,
+          title: "Task Manager",
+          tag: "Node",
+          link: "",
+          github: "https://github.com/DihanAbir/Note--MERN",
+        },
         // html css
         {
-          id: "1",
+          id: "31",
           preview: html1,
           title: "E-commerce Frontend",
           tag: "HTML",
@@ -56,7 +139,7 @@ class Portfolio extends React.Component {
           github: "https://github.com/DihanAbir",
         },
         {
-          id: "21554",
+          id: "4",
           preview: html4,
           title: "News Portal",
           tag: "HTML",
@@ -64,7 +147,7 @@ class Portfolio extends React.Component {
           github: "https://github.com/DihanAbir",
         },
         {
-          id: "3",
+          id: "5",
           preview: html5,
           title: "NEC LAB",
           tag: "HTML",
@@ -72,7 +155,7 @@ class Portfolio extends React.Component {
           github: "https://github.com/DihanAbir",
         },
         {
-          id: "4",
+          id: "6",
           preview: html6,
           title: "Social Blog",
           tag: "HTML",
@@ -80,7 +163,7 @@ class Portfolio extends React.Component {
           github: "https://github.com/DihanAbir",
         },
         {
-          id: "5",
+          id: "7",
           preview: html7,
           title: "Urban Fashion",
           tag: "HTML",
@@ -88,7 +171,7 @@ class Portfolio extends React.Component {
           github: "https://github.com/DihanAbir",
         },
         {
-          id: "6",
+          id: "8",
           preview: html8,
           title: "Stocki",
           tag: "HTML",
@@ -98,69 +181,69 @@ class Portfolio extends React.Component {
         // html css
         // react
         {
-          id: "1",
+          id: "9",
           preview: react1,
           title: "Counsulting Site",
-          tag: "MERN",
+          tag: "React",
           link: "https://pensive-varahamihira-61d0eb.netlify.app/",
           github: "https://dihan-abir0.netlify.app/portfolio",
+          feature: "",
+          technology: "",
         },
 
         {
-          id: "2",
-          preview:
-            "https://images.unsplash.com/photo-1608291790905-5faeccf569bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-          title: "Smartwatch",
-          tag: "MERN",
-          link: "https://dihan-abir0.netlify.app/",
+          id: "19",
+          preview: react4,
+          title: "amajon clone",
+          tag: "React",
+          link: "https://emmajhonshop.netlify.app/",
+          github:
+            "https://github.com/DihanAbir/web_versity_project/tree/master/src",
+          feature: "",
+          technology: "",
+        },
+
+        {
+          id: "12",
+          preview: react3,
+          title: "Course site",
+          tag: "React",
+          link: "https://happy-joliot-50ae7e.netlify.app",
+          github: "https://github.com/DihanAbir/courseSite",
+          feature: "",
+          technology: "",
         },
         {
-          id: "3",
-          preview:
-            "https://images.unsplash.com/photo-1620953749696-38989c40eadb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-          title: "Speakerphone",
-          tag: "MERN",
-          link: "https://dihan-abir0.netlify.app/",
+          id: "18",
+          preview: react2,
+          title: "Air CNC",
+          tag: "React",
+          link: "https://cranky-franklin-1ad280.netlify.app/",
+          github: "https://github.com/DihanAbir/AirCnC",
+          feature:
+            "Users can choose Place by filtering || Google Map || Admins can see Users booking || Admin can add new services || Add to cart",
+          technology: "",
         },
         {
-          id: "2",
-          preview:
-            "https://images.unsplash.com/photo-1621009026527-960a28cf68a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-          title: "Application",
-          tag: "Application",
-          link: "https://dihan-abir0.netlify.app/",
+          id: "15",
+          preview: react5,
+          title: "Resturant Site",
+          tag: "React",
+          link: "https://heuristic-northcutt-cc3ef6.netlify.app/",
+          github: "https://github.com/DihanAbir/Resturant_Management_MERN",
+          feature: "",
+          technology: "",
         },
         {
-          id: "3",
-          preview:
-            "https://images.unsplash.com/photo-1620887149707-4c09ac37652c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60 ",
-          title: "Application",
-          tag: "Application",
-          link: "https://dihan-abir0.netlify.app/",
-        },
-        {
-          id: "4",
-          preview:
-            "https://images.unsplash.com/photo-1620887145520-fc916eea31af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-          title: "Sneakers",
-          tag: "MERN",
-          link: "https://dihan-abir0.netlify.app/",
-        },
-        {
-          id: "5",
-          preview:
-            "https://images.unsplash.com/photo-1620935432499-e478e9ffa6ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-          title: "Label",
-          tag: "Frontend",
-          link: "https://dihan-abir0.netlify.app/",
-        },
-        {
-          id: "6",
-          preview:
-            "https://images.unsplash.com/photo-1620957335851-2dcb14344faf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mzd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-          title: "lemons",
-          tag: "Frontend",
-          link: "https://dihan-abir0.netlify.app/",
+          id: "14",
+          preview: react6,
+          title: "Athena Site",
+          tag: "React",
+          link: "https://peaceful-sammet-9b11a4.netlify.app/",
+          github: "https://github.com/DihanAbir/Athena-design",
+          feature:
+            "Creative Agency providing services ||  Customer can place Order a service || Admin can add new services || User Role Management system (Admin and User)",
+          technology: "",
         },
       ],
       // PORTFOLIO GALLERY WILL LOAD THIS AFTER FUNCTION "filterGallery" FINISH FILTERING
@@ -242,6 +325,7 @@ class Portfolio extends React.Component {
             title={project.title}
             tag={project.tag}
             link={project.link}
+            github={project.github}
           />
         ) : (
           <ProjectBox
@@ -250,6 +334,7 @@ class Portfolio extends React.Component {
             title={project.title}
             tag={project.tag}
             link={project.link}
+            github={project.github}
           />
         )
       );
@@ -300,25 +385,37 @@ class Portfolio extends React.Component {
                   >
                     ALL
                   </li>
+
                   <li
                     className={
-                      this.state.pickedFilter === "MERN"
+                      this.state.pickedFilter === "Node"
                         ? "portfolio__nav-active font12"
                         : "font12"
                     }
-                    onClick={() => this.filterGallery("MERN")}
+                    onClick={() => this.filterGallery("Node")}
                   >
-                    MERN
+                    NODE
                   </li>
                   <li
                     className={
-                      this.state.pickedFilter === "Frontend"
+                      this.state.pickedFilter === "React"
                         ? "portfolio__nav-active font12"
                         : "font12"
                     }
-                    onClick={() => this.filterGallery("Frontend")}
+                    onClick={() => this.filterGallery("React")}
                   >
-                    Frontend
+                    React
+                  </li>
+
+                  <li
+                    className={
+                      this.state.pickedFilter === "NextJS"
+                        ? "portfolio__nav-active font12"
+                        : "font12"
+                    }
+                    onClick={() => this.filterGallery("NextJS")}
+                  >
+                    NextJS
                   </li>
                   <li
                     className={
@@ -339,6 +436,16 @@ class Portfolio extends React.Component {
                     onClick={() => this.filterGallery("HTML")}
                   >
                     HTML
+                  </li>
+                  <li
+                    className={
+                      this.state.pickedFilter === "portfolio"
+                        ? "portfolio__nav-active font12"
+                        : "font12"
+                    }
+                    onClick={() => this.filterGallery("portfolio")}
+                  >
+                    PORTFOLIO
                   </li>
                 </ul>
               </div>

@@ -16,14 +16,32 @@ const hero = () => (
           <div className="hero-info">
             <h1 className="weight800 font60">Hello!!!</h1>
             <h1 className="weight800 font60">This Is Nahid Murad Abir</h1>
-            <p className="font12">
+            <p className="paraabout">
               A passionate web developer who enthusiast the development of a
               website. I have a <b>1.6-year's of working experience</b> by doing
               several web project. Always tried to find real-life problems and
               try to find an efficient solution using my critical thinking
               ability.
             </p>
-            <Button label="SEND MESSAGE" target={"contact"} />
+            <div className="contactinfo">
+              <Button
+                className="contbutton"
+                label="SEND MESSAGE"
+                target={"contact"}
+              />
+              <a
+                target="_blank"
+                href="https://www.upwork.com/freelancers/~01e8b1c7043920a1f5"
+              >
+                <button className="contbtnu contbtn">Upwork</button>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.fiverr.com/nahidabir?up_rollout=true"
+              >
+                <button className="contbtnf contbtn">Fiverr</button>
+              </a>
+            </div>
           </div>
         </Col>
         <Col md={12} lg={6}>
