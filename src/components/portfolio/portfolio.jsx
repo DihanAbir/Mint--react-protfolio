@@ -58,7 +58,7 @@ class Portfolio extends React.Component {
           preview: portfolio2,
           title: "portfolio1",
           tag: "portfolio",
-          link: "",
+          link: "https://nahid-murad-abir.netlify.app/",
           github: "https://github.com/DihanAbir/Mint--react-protfolio",
         },
         {

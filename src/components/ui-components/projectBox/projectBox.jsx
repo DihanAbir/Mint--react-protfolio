@@ -16,6 +16,12 @@ const projectBox = (props) => (
           target="_blank"
         >
           <button className="btn-custom">Live</button>
+        </a>
+        <a
+          href={props.github}
+          // rel="noopener noreferrer"
+          target="_blank"
+        >
           <button className="btn-custom2 mx-1">github</button>
         </a>
       </div>
