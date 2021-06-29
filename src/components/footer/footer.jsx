@@ -3,7 +3,7 @@ import { Row, Col } from "react-flexbox-grid";
 import { Link } from "react-scroll";
 import "./footer.scss";
 
-import Logo from "../../assets/navbar/logoblack.svg";
+import Logo from "../../assets/navbar/logo-yellow.svg";
 import Arrow from "../../assets/footer/arrow.svg";
 
 const partnerBox = () => (
@@ -13,7 +13,7 @@ const partnerBox = () => (
         <Col xs={12} sm={6} md={6}>
           <div className="footer-box">
             <img src={Logo} alt="logo" />
-            <p>© 2020 - abir0,All Right Reserved</p>
+            <p>© 2020 - abir, All Right Reserved</p>
           </div>
         </Col>
         <Col xs={12} sm={6} md={6}>
