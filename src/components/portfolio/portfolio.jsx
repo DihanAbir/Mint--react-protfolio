@@ -49,7 +49,7 @@ class Portfolio extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      layout: "list",
+      layout: "grid",
       // PORTFOLIO PROJECTS
       projects: [
         // portfolio
