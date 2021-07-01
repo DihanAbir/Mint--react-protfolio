@@ -117,8 +117,18 @@ class Blog extends React.Component {
       },
     };
 
+    // useEffect(() => {}, [theme]);
+
+    let theme = localStorage.getItem("theme");
     return (
-      <div className="blog">
+      <div
+        // style={
+        //   localStorage.getItem("theme") === "theme-dark"
+        //     ? { background: "red" }
+        //     : { background: "black" }
+        // }
+        className="blog"
+      >
         <div className="wrapper">
           <Title title="OUR BLOG." />
 

@@ -5,6 +5,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+
   // z-index: -1111111;
 }
 
@@ -284,27 +285,27 @@ p {
   animation: mymove 5s infinite;
 }
 .wrapper {
-  animation: mymove 5s infinite;
+  // animation: mymove 5s infinite;
 }
 .cvbtn a {
   animation: cv 3s infinite;
   position: relative;
 }
 
-@keyframes mymove {
-  0% {
-    color: #001763;
-  }
-  25% {
-    color: #000c2c;
-  }
-  75% {
-    color: #000002;
-  }
-  100% {
-    color: #000049;
-  }
-}
+// @keyframes mymove {
+//   0% {
+//     color: #001763;
+//   }
+//   25% {
+//     color: #000c2c;
+//   }
+//   75% {
+//     color: #000002;
+//   }
+//   100% {
+//     color: #000049;
+//   }
+// }
 @keyframes cv {
   0% {
     top: 0px;

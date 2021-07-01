@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import { BsCloudDownload } from "react-icons/bs";
+import ToggleFunction from "./ToggleFunction";
 // SCSS
 import "./navbar.scss";
 // Assets
@@ -76,7 +77,9 @@ const desktopNav = (props) => (
               </a>
             </button>
           </li>
-          
+          <li>
+            <ToggleFunction />
+          </li>
         </ul>
       </div>
     </div>
