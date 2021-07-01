@@ -27,26 +27,39 @@ const ToggleFunction = () => {
   return (
     <div className="container--toggle">
       {togClass === "light" ? (
-        <label className="switch">
+        <div onClick={handleOnClick} className="wrg-toggle">
+          <div className="wrg-toggle-container">
+            <div className="wrg-toggle-check">
+              <span>🌜</span>
+            </div>
+            <div className="wrg-toggle-uncheck">
+              <span>🌞</span>
+            </div>
+          </div>
+          <div className="wrg-toggle-circle"></div>
           <input
+            className="wrg-toggle-input"
             type="checkbox"
-            id="toggle"
-            className="toggle--checkbox"
-            onClick={handleOnClick}
-            checked
+            aria-label="Toggle Button"
           />
-          <span class="slider round"></span>
-        </label>
+        </div>
       ) : (
-        <label className="switch">
-          <input
-            type="checkbox"
-            id="toggle"
-            className="toggle--checkbox"
-            onClick={handleOnClick}
-          />
-          <span class="slider round"></span>
-        </label>
+        <div onClick={handleOnClick} className="wrg-toggle">
+          <div className="wrg-toggle-container">
+            <input
+              className="wrg-toggle-input"
+              type="checkbox"
+              aria-label="Toggle Button"
+            />
+            <div className="wrg-toggle-circle"></div>
+          </div>
+          <div className="wrg-toggle-uncheck">
+            <span>🌜</span>
+          </div>
+          <div className="wrg-toggle-check">
+            <span>🌞</span>
+          </div>
+        </div>
       )}
       {/* <label htmlFor="toggle" className="toggle--label">
         <span className="toggle--label-background"></span>
