@@ -94,7 +94,7 @@ class Portfolio extends React.Component {
           preview: node2,
           title: "Note app",
           tag: "Node",
-          link: "",
+          link: "https://github.com/DihanAbir/notepad",
           github: "https://github.com/DihanAbir/notepad",
         },
         {
@@ -102,7 +102,7 @@ class Portfolio extends React.Component {
           preview: node1,
           title: "Bootcamp",
           tag: "Node",
-          link: "",
+          link: "https://github.com/DihanAbir/Bootcamp",
           github: "https://github.com/DihanAbir/Bootcamp",
         },
         {
@@ -110,7 +110,7 @@ class Portfolio extends React.Component {
           preview: node3,
           title: "Task Manager",
           tag: "Node",
-          link: "",
+          link: "https://github.com/DihanAbir/Note--MERN",
           github: "https://github.com/DihanAbir/Note--MERN",
         },
         // html css
@@ -256,7 +256,7 @@ class Portfolio extends React.Component {
 
   // FIRST LOAD
   componentDidMount() {
-    this.filterGallery("all");
+    this.filterGallery("React");
   }
 
   gridHandler(e) {

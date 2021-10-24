@@ -30,10 +30,10 @@ const ToggleFunction = () => {
         <div onClick={handleOnClick} className="wrg-toggle">
           <div className="wrg-toggle-container">
             <div className="wrg-toggle-check">
-              <span>🌜</span>
+              <span>🌚</span>
             </div>
             <div className="wrg-toggle-uncheck">
-              <span>🌞</span>
+              <span>😚</span>
             </div>
           </div>
           <div className="wrg-toggle-circle"></div>
@@ -45,20 +45,20 @@ const ToggleFunction = () => {
         </div>
       ) : (
         <div onClick={handleOnClick} className="wrg-toggle">
-          <div className="wrg-toggle-container">
-            <input
-              className="wrg-toggle-input"
-              type="checkbox"
-              aria-label="Toggle Button"
-            />
-            <div className="wrg-toggle-circle"></div>
-          </div>
+          <div className="wrg-toggle-container"></div>
+          <div className="wrg-toggle-circle"></div>
           <div className="wrg-toggle-uncheck">
-            <span>🌜</span>
+            <span>🌚</span>
           </div>
           <div className="wrg-toggle-check">
-            <span>🌞</span>
+            <span>😚</span>
           </div>
+
+          <input
+            className="wrg-toggle-input"
+            type="checkbox"
+            aria-label="Toggle Button"
+          />
         </div>
       )}
       {/* <label htmlFor="toggle" className="toggle--label">
